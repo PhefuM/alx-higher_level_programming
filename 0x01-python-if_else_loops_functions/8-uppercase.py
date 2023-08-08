@@ -2,7 +2,7 @@
 def to_uper(character):
     if ord(character) >= 97 and ord(character) <= 122:
         return (ord(character) - 32)
-    esle:
+    else:
         return ord(character)
 
 
