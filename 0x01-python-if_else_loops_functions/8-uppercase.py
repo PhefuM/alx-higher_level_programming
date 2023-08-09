@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def to_uppercase(str):
+def uppercase(str):
     if ord(character) >= 97 and ord(character) <= 122:
         ch = chr(ord(character) - 32)
 
