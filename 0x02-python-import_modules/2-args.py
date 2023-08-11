@@ -6,8 +6,9 @@ if __name__ == "__main__":
     string = "arguments:" if size != 1 else "argument:"
     string = "arguments." if size == 0 else string
     print("{} ".format(size) + string)
-    if arguments and size != 0:
+
+if arguments and size != 0:
         for i, arg in enumerate(arguments):
             if i == 0:
                 continue
-        print("{}: {}".format(i, arguments[i]))
+            print("{}: {}".format(i, arguments[i]))
