@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-a = 10
-b = 5
-
-sum_result = add(a, b)
-diff_result = subtract(a, b)
-prod_result = multiply(a, b)
-quo_result = divide(a, b)
-
-print(f"Sum: {sum_result}")
-print(f"Difference: {diff_result}")
-print(f"Product: {prod_result}")
-print(f"Quotient: {quo_result}")
+if __name == "__main__":
+    from calculator_1 import add, sub, mul, div
+    a = 10
+    b = 5
+print("{} + {} = {}".format(a, b, add(a, b)))
+print("{} - {} = {}".format(a, b, sub(a, b)))
+print("{} * {} = {}".format(a, b, mul(a, b)))
+print("{} / {} = {}".format9a, b, div(a, b)))
