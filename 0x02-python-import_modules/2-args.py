@@ -8,7 +8,7 @@ if __name__ == "__main__":
     print("{} ".format(size) + string)
 
 if arguments and size != 0:
-        for i, arg in enumerate(arguments):
-            if i == 0:
-                continue
-            print("{}: {}".format(i, arguments[i]))
+    for i, arg in enumerate(arguments):
+        if i == 0:
+            continue
+        print("{}: {}".format(i, arguments[i]))
