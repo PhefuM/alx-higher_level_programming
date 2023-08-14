@@ -1,4 +1,4 @@
-#!/usr/inpython3
+#!/usr/python3
 # 2-replace_in_list.py
 
 
