@@ -14,10 +14,10 @@ def roman_to_int(roman_string):
             "M": 1000
                        }
 
-    pre_v = 0
+    prev_v = 0
     output = 0
     for char in reversed(roman_string):
-        v = roman_numerals.get(char,0)
+        v = roman_numerals.get(char, 0)
         if v >= prev_v:
             output += v
         else:
