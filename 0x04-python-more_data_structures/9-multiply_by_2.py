@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
-    new_d = {}
+    """ returns a new dictionsry with all values multiplied by 2."""
+    b_dictionary = {}
     for i in a_dictionary:
-        new_d[i] = a_dictionary[i] * 2
-    return new_d
-
+        b_dictionary[i] = a_dictionary[i] * 2
+    return b_dictionary
