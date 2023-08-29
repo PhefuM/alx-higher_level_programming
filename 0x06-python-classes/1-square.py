@@ -2,7 +2,7 @@
 """Square module that has a class to create an object"""
 
 
-class Square:
+class Square():
    """An empty square class"""
    
    def__init__(self,size):
