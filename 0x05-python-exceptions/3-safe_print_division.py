@@ -11,3 +11,4 @@ def safe_print_division(a, b):
         return num
     finally:
         print("Inside result: {}".format(num)
+        return (num)
