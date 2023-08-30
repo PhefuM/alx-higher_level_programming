@@ -3,6 +3,14 @@
 
 
 class Square:
-   """An empty square class"""
-   def__init__(self, size):
-   self.__size = size
+    """represents a square"""
+     Attributes:
+         __size (intt): size of a side of the square
+     """
+     def__init__(self, size):
+        """Initializes a square
+        Args:
+            size (int): size of a side of the square
+        Return: None
+        """
+        self.__size = size
