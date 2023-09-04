@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-
-""" This module contains the initial implementation of the rectangle """
+"""
+Defines an empty class Rectangle
+"""
 
 
 class Rectangle:
-    """An empty Rectangle class."""
-
-
-pass
+    """Empty representation of a rectangle"""
+    pass
