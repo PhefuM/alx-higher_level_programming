@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""Module 0-rectangle
-Defines an empty rectangle class.
+"""This module contains the initial implementation of the reactangle class
+   It is simply declared
 """
 
 
 class Rectangle:
-"""Empty class."""
+"""An empty Rectangle class."""
+
 pass
