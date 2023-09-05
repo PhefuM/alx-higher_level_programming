@@ -8,8 +8,8 @@ class Rectangle:
     """Representation of a rectangle"""
     def __init__(self, width=0, height=0):
         """Initializes the rectangle"""
-        self.width = width
         self.height = height
+        self.width = width
 
     @property
     def width(self):
@@ -22,7 +22,7 @@ class Rectangle:
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
-            raise Value Error("width must be >= 0")
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -32,7 +32,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """setter for te priave instance attribute height"""
+        """setter for the private instance attribute height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
@@ -45,14 +45,14 @@ class Rectangle:
 
     def perimeter(self):
         """returns the perimeter of the rectangle"""
-        if self.__width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """returns the printable string representaion of the rectangle"""
+        """returns printable string representation of the rectangle"""
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
-                                for j in range(self.height))
+                                for j in range(self.__height))
         return string
