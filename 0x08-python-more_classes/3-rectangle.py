@@ -1,20 +1,20 @@
 #!/usr/bin/python3
 """
-Defines a sclass Rectangle
+Defines a class Rectangle
 """
 
 
 class Rectangle:
-    """Representaion of a rectangle"""
+    """Representation of a rectangle"""
     def __init__(self, width=0, height=0):
         """Initializes the rectangle"""
         self.width = width
-        sefl.height = height
+        self.height = height
 
     @property
     def width(self):
         """getter for the private instance attribute width"""
-        return self.___width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -52,7 +52,7 @@ class Rectangle:
     def __str__(self):
         """returns the printable string representaion of the rectangle"""
         string = ""
-        if self.__width != 0 and slef.__height != 0:
+        if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
                                 for j in range(self.height))
         return string
