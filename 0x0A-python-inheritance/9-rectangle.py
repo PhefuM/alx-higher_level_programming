@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Contains the clas BaseGeometry
+Contains the class BaseGeometry and subclass Rectangle
 """
 
 
