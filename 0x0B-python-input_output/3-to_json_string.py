@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This module defines a string-to-JSON function"""
-inport json
+import json
 
 
 def to_json_string(my_obj):
