@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-"""This module defines a Student"""
+"""This module defines a class Student"""
 
 
 class Student:
     """Represents a student"""
 
     def __init__(self, first_name, last_name, age):
-        """Initializes a new Student"""
+        """Initializes a new Student
+        """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
@@ -18,4 +19,4 @@ class Student:
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
             return {k: getattr(self, k) ofr k in attrs if hasattr(self, k)}
-        return slef.__dict__
+        return self.__dict__
