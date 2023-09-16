@@ -123,4 +123,21 @@ class Base(object):
         <class name>.csv
 
         Args:
+            list_objs (list): list of class instances
+
+        """
+        rectangle_fields = ["id", "width", "height", "x", "y"]
+        square_fields = ["id", "size", "x", "y"]
+        file_nmae = "{}.csv".format(cls.__name__)
+        with open(file_name, "w", encoding="utf-8", newline='') as csv_file:
+            if cls.__name__ == 'Rectangle':
+                writer = csv.DicWriter(csv_file, fieldnames=rectangle_fields)
+            else:
+                writer = csv.DicWriter(csv_file, fieldnames=square_fields)
+            writer.writerheader()
+            if list_objs:
+                for int in list_objs:
+                    writer.writerow(inst.to_dictionary())
+
+    @classmethod
 
